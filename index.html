@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="icon" href="https://img.icons8.com/ios-filled/50/calculator.png">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div >
+            <h1 class="first">
+                iPhone Calculator!
+            </h1>
+        </div>
+        
+        <div class="caluculator">
+            <form>
+                <div class="display">
+                    
+                    <input type="text" name="dispaly">
+                </div>
+                <div>
+                    <input type="button" value="AC" onclick="dispaly.value ='' " id="gray">
+                    <input type="button" value="DE" onclick="dispaly.value =dispaly.value.toString().slice(0,-1) " id="gray">
+                    <input type="button" value="."onclick="dispaly.value +='.' " id="gray">
+                    <input type="button" value="/" onclick="dispaly.value +='/' " id="orange">
+                </div>
+                <div>
+                    <input type="button" value="7" onclick="dispaly.value +='7' " id="lightgrey">
+                    <input type="button" value="8" onclick="dispaly.value +='8' " id="lightgrey">
+                    <input type="button" value="9" onclick="dispaly.value +='9' " id="lightgrey">
+                    <input type="button" value="*" onclick="dispaly.value +='*' "  id="orange">
+                </div>
+                <div>
+                    <input type="button" value="4" onclick="dispaly.value +='4' " id="lightgrey">
+                    <input type="button" value="5"  onclick="dispaly.value +='5' " id="lightgrey">
+                    <input type="button" value="6"onclick="dispaly.value +='6' " id="lightgrey">
+                    <input type="button" value="-" onclick="dispaly.value +='-' "  id="orange">
+                </div>
+                <div>
+                    <input type="button" value="1" onclick="dispaly.value +='1' " id="lightgrey">
+                    <input type="button" value="2" onclick="dispaly.value +='2' " id="lightgrey">
+                    <input type="button" value="3"onclick="dispaly.value +='3' " id="lightgrey">
+                    <input type="button" value="+" onclick="dispaly.value +='+' "  id="orange">
+                </div>
+                <div>
+                    <input type="button" value="00" onclick="dispaly.value +='00' " id="lightgrey">
+                    <input type="button" value="0" onclick="dispaly.value +='0' " id="lightgrey">
+                    <input type="button" value="=" onclick="dispaly.value = eval(dispaly.value)" 
+                    class="equal"  id="orange"s>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
